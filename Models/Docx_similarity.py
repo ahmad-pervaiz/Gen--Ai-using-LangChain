@@ -33,3 +33,5 @@ index, top_score = sorted(list(enumerate(score)), key=lambda x: x[1])[-1]
 print("Best Match Document:")
 print(document[index])
 print(f"Similarity Score is: {top_score:.4f}")
+
+print ("similarity report completed ")
