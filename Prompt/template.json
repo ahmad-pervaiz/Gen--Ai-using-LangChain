@@ -1,0 +1,22 @@
+{
+  "lc": 1,
+  "type": "constructor",
+  "id": [
+    "langchain",
+    "prompts",
+    "prompt",
+    "PromptTemplate"
+  ],
+  "kwargs": {
+    "input_variables": [
+      "length",
+      "length_input",
+      "paper_input",
+      "style",
+      "style_input"
+    ],
+    "template": "\nYou are a world-class AI researcher and educator.\n\nPaper Title: {paper_input}\nDesired Style: {style_input}\nDesired Length: {length_input}\n\nExplain this research paper in a {style} manner.\nProvide a {length} explanation.\n\nStructure your response with:\n- Key Problem & Motivation\n- Main Innovation / Contribution\n- Methodology Overview\n- Results & Impact\n- Why This Paper Matters\n\nBe accurate, clear, and engaging.\n",
+    "template_format": "f-string"
+  },
+  "name": "PromptTemplate"
+}
