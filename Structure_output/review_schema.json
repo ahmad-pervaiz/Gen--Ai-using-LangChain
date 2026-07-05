@@ -1,0 +1,74 @@
+{
+  "properties": {
+    "key_themes": {
+      "description": "List all the key themes discussed in the review",
+      "items": {
+        "type": "string"
+      },
+      "title": "Key Themes",
+      "type": "array"
+    },
+    "summary": {
+      "description": "A short summary of the review",
+      "title": "Summary",
+      "type": "string"
+    },
+    "sentiment": {
+      "description": "Overall sentiment: positive, negative, or neutral",
+      "title": "Sentiment",
+      "type": "string"
+    },
+    "pros": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "List of pros",
+      "title": "Pros"
+    },
+    "cons": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "List of cons",
+      "title": "Cons"
+    },
+    "reviewer_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Name of the reviewer if mentioned",
+      "title": "Reviewer Name"
+    }
+  },
+  "required": [
+    "key_themes",
+    "summary",
+    "sentiment"
+  ],
+  "title": "Review",
+  "type": "object"
+}
